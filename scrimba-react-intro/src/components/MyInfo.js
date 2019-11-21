@@ -1,17 +1,15 @@
 import React from 'react';
+import Navbar from './Navbar';
+import MainContent from './MainContent';
+import Footer from './Footer';
 
 function MyInfo() {
-    return(
+    return (
         <div>
-        <h1>Doug</h1>
-        <p>Web developer, enjoy Disney, and am a tech enthusiast.</p>
-        <p>Places I'd love to visit</p>
-        <ol>
-            <li>Hawaii</li>
-            <li>New Orleans</li>
-            <li>New Zealand</li>
-        </ol>
-    </div>
+            <Navbar />
+            <MainContent />
+            <Footer />
+        </div>
     )
 }
 
