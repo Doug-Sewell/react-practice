@@ -4,12 +4,9 @@ import jokeData from '../data/jokeData'
 
 const Jokes = () => {
 
-
-    const jokes = jokeData.map((joke, index) => {
-        return (
-            <Joke key={index} jokeInfo={{Question: joke.Question, Answer: joke.Answer}} />
-        )
-    });
+    const jokes = jokeData.map(
+        (joke, index) => <Joke key={index} jokeInfo={{ Question: joke.Question, Answer: joke.Answer }} />
+    );
 
 
 
