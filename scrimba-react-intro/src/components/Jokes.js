@@ -1,28 +1,21 @@
 import React from 'react';
 import Joke from './Joke';
+import jokeData from '../data/jokeData'
 
 const Jokes = () => {
+
+
+    const jokes = jokeData.map((joke, index) => {
+        return (
+            <Joke key={index} jokeInfo={{Question: joke.Question, Answer: joke.Answer}} />
+        )
+    });
+
+
+
     return (
         <div>
-            <Joke jokeInfo={{
-                Question: 'Why did the chicken cross the road?',
-                Answer: 'To get to the other side!'
-            }} />
-            <Joke jokeInfo={{
-                Question: 'Where does a fish get money?',
-                Answer: 'The riverbank!'
-            }} />
-            <Joke jokeInfo={{
-                Answer: 'I recently sold my vacuum as it was just gathering dust.'
-            }} />
-            <Joke jokeInfo={{
-                Question: 'What was the dog\'s favorite type of homework to do?',
-                Answer: 'A lab report!'
-            }} />
-            <Joke jokeInfo={{
-                Question: 'Why did the chicke cross the road?',
-                Answer: 'To get to the other side!'
-            }} />
+            {jokes}
         </div>
     )
 }
