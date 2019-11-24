@@ -17,3 +17,9 @@
 .nav>ul>li {
   margin-right:2rem;
 }
+
+.TodoItem {
+  border-bottom: solid 1px lightgray;
+  margin-bottom:2rem;
+  padding-bottom:2rem;
+}

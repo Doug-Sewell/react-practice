@@ -1,11 +1,13 @@
 import React from 'react';
+import TodoItem from './TodoItem';
 
     function MainContent() {
         return(
             <form>
-                <input type="checkbox" id="first-option" /> <label for="first-option">Option 1</label><br />
-                <input type="checkbox" id="second-option" /> <label for="second-option">Option 2</label><br />
-                <input type="checkbox" id="third-option" /> <label fore="third-option">Option 3</label>
+                <TodoItem />
+                <TodoItem /> 
+                <TodoItem /> 
+                <TodoItem /> 
             </form>
         )
     }

@@ -1,8 +1,12 @@
 import React from 'react';
 
+const footerStyle = {
+    backgroundColor:'aqua'
+}
+
     function Footer() {
         return(
-            <footer>This will be the footer.</footer>
+            <footer style={footerStyle}>This will be the footer.</footer>
         )
     }
 
