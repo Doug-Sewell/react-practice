@@ -1,20 +1,26 @@
 import React from 'react';
-import MyInfo from './MyInfo';
 
 
-
-const jokeQuestionCheck = (question) => {
-    if (question) {
-        return `Question: ${question}`;
-    }
-}
 
 const Joke = (props) => {
+
+
+    const jokeQuestionCheck = (question) => {
+        if (question) {
+            return `Question: ${question}`;
+        }
+    }
+
+    const styles = {
+        display:'block'
+    }
+
+
+    
     return (
         <div>
-            <p>{jokeQuestionCheck(props.jokeInfo.Question)}
-                <br />
-                Answer: {props.jokeInfo.Answer}</p>
+            <p><span style={styles}>{jokeQuestionCheck(props.jokeInfo.Question)}</span>
+            Answer: {props.jokeInfo.Answer}</p>
         </div>
     )
 }
