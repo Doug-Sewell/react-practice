@@ -1,0 +1,12 @@
+.product {
+    border:solid .15rem black;
+    width:40%;
+    margin: 2rem 0 2rem 0;
+    padding:1rem;
+    border-radius:1rem;
+    background-image: linear-gradient(to bottom right,  #ed2181, #aca856);
+}
+
+h3 {
+    margin:0;
+}
