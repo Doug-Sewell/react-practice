@@ -1,23 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import TodoItem from './TodoItem';
 import todosData from '../data/todoData';
 
-function MainContent() {
-    const mapTodos = () => {
-        const toodosMapped = todosData.map( todo => {
+
+class MainContent extends Component {
+    constructor() {
+        super();
+        this.state = {
+            todoItems: todosData
+        }
+    }
+    render() {
+        const toodosMapped = this.state.todoItems.map(todo => {
             return (<TodoItem key={todo.id} todo={todo} />)
         });
-        console.log(toodosMapped);
-        return toodosMapped;
 
+        return (
+            <form>
+                {toodosMapped}
+            </form>
+        )
     }
-
-    return (
-        <form>
-            {mapTodos()}
-
-        </form>
-    )
 }
 
 export default MainContent;
